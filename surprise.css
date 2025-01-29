@@ -116,3 +116,14 @@ body{
 .text13 { top: 45%; left: 10%; animation: fadeInOut 5.7s infinite; }
 .text14 { top: 55%; left: 85%; animation: fadeInOut 7.3s infinite; }
 .text15 { top: 35%; left: 60%; animation: fadeInOut 8.5s infinite; }
+@media screen and (max-width: 768px){
+  .text{
+      font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 480px){
+  .text{
+      font-size: 1.5rem;
+  }
+}

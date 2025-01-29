@@ -154,10 +154,10 @@ body{
     position: relative;
     top: 25px;
 }
-.message p {
+.message p{
     margin-bottom: 15px;
 }
-.message a {
+.message a{
     text-decoration: none;
     color: #d40000;
     font-weight: bold;
