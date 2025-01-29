@@ -14,9 +14,9 @@ A beautifully animated love letter surprise built with HTML, CSS, and JavaScript
 -- JavaScript: Event handling for interactivity<br>
 ### 🔍 Logic & Functionality
 -- 💌 Envelope Animation<br>
-  The envelope is created using CSS pseudo-elements and border properties to form a triangular flap. When the user hovers/clicks, the flap rotates backward (rotateX(160deg)) using CSS transitions. The letter inside slides up (translateY(-130px)) while its opacity increases to become visible.
+  The envelope is created using CSS pseudo-elements and border properties to form a triangular flap. When the user hovers/clicks, the flap rotates backward (rotateX(160deg)) using CSS transitions. The letter inside slides up (translateY(-130px)) while its opacity increases to become visible.<br>
 -- 💓 Heartbeat Effect<br>
-  A red heart at the top of the letter pulses using @keyframes animation (scale(1.05 → 1 → 0.8)).
+  A red heart at the top of the letter pulses using @keyframes animation (scale(1.05 → 1 → 0.8)).<br>
 -- 🎉 Surprise Page Animation<br>
   15 different love messages appear randomly on the screen. Each message fades in and out using CSS keyframe animations (opacity and scale). The messages have randomized positions and animation durations to create a dynamic effect.<br><br>
 #### Clone the repository: git clone https://github.com/Tamanna013/letter-for-you.git<br>
