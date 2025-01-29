@@ -1,0 +1,114 @@
+body{
+  font-style: Arial, sans-serif;
+  background: black;
+  color: white;
+  overflow: hidden;
+}
+.animation-box{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.animation-container{
+  width: 1000rem;
+  height: 30rem;
+}
+.text{
+  position: absolute;
+  font-size: 2rem;
+  font-weight: bold;
+  opacity: 0;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+}  
+@keyframes topFadeOut{
+    0%{
+      position: absolute;
+      top: -3rem;
+      opacity: 0;
+    }
+    75%{
+      position: absolute;
+      top: 25%;
+      opacity: 1;
+    }
+    100%{
+      opacity: 0;
+    }
+}
+@keyframes bottomFadeOut{
+    0%{
+      position: absolute;
+      bottom: -5rem;
+      opacity: 0;
+    }
+    75%{
+      position: absolute;
+      bottom: 25%;
+      opacity: 1;
+    }
+  
+    100%{
+      opacity: 0;
+    }
+}
+@keyframes topFadeOutVertical{
+    0%{
+      position: absolute;
+      top: -3rem;
+      opacity: 0;
+    }
+    75%{
+      position: absolute;
+      top: 45%;
+      opacity: 1;
+    }
+    100%{
+      opacity: 0;
+    }
+}
+@keyframes rightFadeInOut{
+    0%{
+      position: absolute;
+      right: -3rem;
+      opacity: 0;
+    }
+    75%{
+      position: absolute;
+      right: 10rem;
+      opacity: 1;
+    }
+    100%{
+      opacity: 0;
+      right: 10rem;
+    }
+}
+@keyframes fadeInOut{
+    0%{
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    45%{
+      opacity: 1;
+      transform: scale(1);
+    }
+    100%{
+      opacity: 0%;
+      transform: scale(1.2);
+    }
+}
+.text1 { top: 10%; left: 5%; animation: fadeInOut 6s infinite; }
+.text2 { top: 20%; left: 75%; animation: fadeInOut 7s infinite; }
+.text3 { top: 50%; left: 10%; animation: fadeInOut 5.5s infinite; }
+.text4 { top: 70%; left: 60%; animation: fadeInOut 6.5s infinite; }
+.text5 { top: 15%; left: 40%; animation: fadeInOut 8s infinite; }
+.text6 { top: 80%; left: 20%; animation: fadeInOut 7.5s infinite; }
+.text7 { top: 30%; left: 55%; animation: fadeInOut 6.2s infinite; }
+.text8 { top: 60%; left: 5%; animation: fadeInOut 7.8s infinite; }
+.text9 { top: 90%; left: 50%; animation: fadeInOut 5.9s infinite; }
+.text10 { top: 25%; left: 80%; animation: fadeInOut 8.2s infinite; }
+.text11 { top: 40%; left: 30%; animation: fadeInOut 6.6s infinite; }
+.text12 { top: 75%; left: 70%; animation: fadeInOut 7.1s infinite; }
+.text13 { top: 45%; left: 10%; animation: fadeInOut 5.7s infinite; }
+.text14 { top: 55%; left: 85%; animation: fadeInOut 7.3s infinite; }
+.text15 { top: 35%; left: 60%; animation: fadeInOut 8.5s infinite; }

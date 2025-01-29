@@ -1,0 +1,193 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: black;
+    background: url("./black-back.avif");
+    background-size: cover;
+    background-position: center center;
+    margin: 0;
+    overflow: hidden;
+}
+.love-envelope{
+    position: relative;
+    cursor: pointer;
+}
+.envelope-back{
+    position: relative;
+    width: 300px;
+    height: 250px;
+    background: #ff0000;
+    border-radius: 10px;
+}
+.envelope-front{
+    position: absolute;
+    border-right: 150px solid #d40000;
+    border-top: 120px solid transparent;
+    height: 0;
+    width: 0;
+    top: 0;
+    left: 150px;
+    z-index: 3;
+}
+.envelope-front::before{
+    content: "";
+    position: absolute;
+    border-left: 150px solid #d40000;
+    border-top: 120px solid transparent;
+    border-bottom: 120px solid transparent;
+    height: 0;
+    width: 0;
+    top: -120px;
+    left: -150px;
+}
+.envelope-front::after{
+    content: "";
+    position: absolute;
+    border-bottom: 125px solid #a30000;
+    border-left: 150px solid transparent;
+    border-right: 150px solid transparent;
+    height: 0;
+    width: 0;
+    top: -5px;
+    left: -150px;
+}
+.envelope-top{
+    position: absolute;
+    border-top: 125px solid #ff4d4d;
+    border-left: 150px solid transparent;
+    border-right: 150px solid transparent;
+    height: 0;
+    width: 0;
+    top: 0;
+    transform-origin: top;
+    transition: 0.5s ease-in-out;
+}
+.love-envelope:hover .envelope-top {
+    transform: rotateX(160deg);
+}
+.love-letter{
+    position: absolute;
+    background: white;
+    width: 280px;
+    height: 230px;
+    top: 10px;
+    left: 10px;
+    transition: 0.3s ease-in-out;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(255, 0, 0, 0.5);
+}
+.love-envelope:hover .love-letter{
+    transform: translateY(-130px);
+    z-index: 2;
+}
+.shadow-below{
+    position: absolute;
+    width: 300px;
+    height: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    top: 260px;
+    left: 0;
+    filter: blur(10px);
+}
+.bottom-text{
+    position: absolute;
+    color: white;
+    font-family: sans-serif;
+    top: 280px;
+    text-align: center;
+    width: 100%;
+}
+.bottom-text h2{
+    font-size: 1.5rem;
+    margin: 0;
+}
+.bottom-text h3{
+    font-size: 1.2rem;
+    margin: 5px 0 0;
+}
+
+/* Check this */
+/*
+.letter-content{
+    text-align: center;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+    font-weight: bold;
+    color: black;
+    position: relative;
+    top: -20px;
+    left: 20px;
+}
+.love-heart{
+    background-color: red;
+    height: 70px;
+    width: 70px;
+    position: relative;
+    top: 20px;
+    left: 20px;
+    transform: rotate(-45deg);
+    box-shadow: -5px 10px 90px red;
+    animation: heartbeat 0.8s linear infinite;
+}
+*/
+.heartbeat {
+    background-color: red;
+    height: 80px;
+    width: 80px;
+    position: relative;
+    top: 30px;
+    left: 100px;
+    transform: rotate(-45deg);
+    box-shadow: -5px 10px 90px red;
+    animation: heartbeat 0.8s linear infinite;
+}
+@keyframes heartbeat{
+    0%{
+      transform: rotate(-45deg) scale(1.05);
+    }
+    70%{
+      transform: rotate(-45deg) scale(1);
+    }
+    100%{
+      transform: rotate(-45deg) scale(0.8);
+    }
+}
+.heartbeat:before, .heartbeat::after{
+    content: "";
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    background-color: red;
+    border-radius: 50px;
+}
+.heartbeat::before{
+    top: -40px;
+}
+.heartbeat::after{
+    right: -40px;
+}
+.message{
+    text-align: center;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: black;
+    position: relative;
+    top: 100px;
+}
+.message p {
+    margin-bottom: 15px;
+}
+.message a {
+    text-decoration: none;
+    color: #d40000;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+.message a:hover{
+    color: #ff4d4d;
+}
