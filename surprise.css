@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Indie+Flower&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 body{
-  font-style: Arial, sans-serif;
-  background: black;
+  background: url('./black-back.avif');
+  background-color: black;
   color: white;
   overflow: hidden;
+  margin: 0;
+  padding: 0;
+  font-family: 'Indie Flower', cursive;
 }
 .animation-box{
   width: 100%;
@@ -15,7 +19,7 @@ body{
 }
 .text{
   position: absolute;
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: bold;
   opacity: 0;
   animation-duration: 5s;
